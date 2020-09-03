@@ -1,0 +1,264 @@
+:root{
+    
+    --primary: #ccdad1;
+    --secondary: #9caea9;
+    --tertiary: #788585;
+    --light-dark: #6f6866;
+    --dark: #38302e;
+    --border-radius: .3rem;
+}
+
+  *{
+      box-sizing: border-box;
+  }
+
+/* card */
+.card {
+    margin: 0 0 20px 0;
+    border-radius: var(--border-radius);
+  }
+
+.card-header {
+color: var(--primary);
+background-color: var(--dark);
+padding: 2.5%;
+border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
+}
+
+.card-body {
+padding: 2.5%;
+}
+
+/* form */
+.form-label,
+.form-input,
+.form-textarea {
+  display: block;
+}
+
+.form-label {
+  font-size: 1.1rem;
+  margin: 0 0 0 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 3%;
+  margin: 0;
+  font-size: 1.2rem;
+  border: 2px solid var(--light-dark);
+  border-radius: var(--border-radius);
+}
+
+.button-colors{
+    color: rgb(255, 174, 0);
+    background-color: var(--dark);
+    transition: .5s;
+}
+
+.button-colors:hover {
+    color: lightblue;
+}
+
+.button-search-name {
+  background-color: lightblue;
+  transition: .5s;
+  color: black;
+  border-radius: 10px;
+}
+
+.button-search-name:hover{
+  background-color:#0275d8;
+  color: white;
+  transition: .5s;
+}
+
+.border-standard {
+    border: 3px var(--light-dark) solid;
+    border-radius: 10px;
+}
+
+.border-bottom-user {
+  border-bottom: 3px #0275d8 solid;
+  border-radius: var(--border-radius);
+  /* border-radius: 10px; */
+}
+
+/* custom classes */
+.slight-margin-allaround{
+  margin: 5px;
+}
+
+.width-60{
+  width: 60%;
+}
+.width-100{
+  width: 100%;
+}
+
+.mr-none {
+  margin-right: 0;
+}
+
+.pad-right-some {
+  padding-right: 1%;
+}
+
+.hide-before-append {
+  opacity: 0;
+}
+
+.city-alt {
+  font-size: 20px;
+}
+
+.img-background {
+  background-color: lightblue;
+  border-radius: 25%;
+}
+
+
+/* uv custom classes */
+
+.low {
+  background-color: lightgreen;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.moderate {
+  background-color: yellow;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.high {
+  background-color: orange;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.very-high {
+  background-color: red;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: white;
+}
+
+.extreme {
+  background-color: magenta;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .mr-none {
+    margin-right: -15px;
+  }
+
+  .width-100 {
+    width: 119px;
+  }
+
+  .width-card-unique {
+    width: 200px !important;
+  }
+
+  #search-history-section {
+    margin-left: 0 !important;
+  }
+
+  #city-search-title {
+    font-size: 25px !important;
+  }
+  .button-search-name {
+    background-color: lightblue;
+    transition: .5s;
+    color: black;
+    border-radius: 10px;
+    margin-left: 0;
+  }
+
+  #input-form {
+    margin-left: 0 !important;
+  }
+
+  #day1-img {
+    -ms-flex-align: center !important;
+  }
+  #day2-img {
+    -ms-flex-align: center !important;
+  }
+  #day3-img {
+    -ms-flex-align: center !important;
+  }
+  #day4-img {
+    -ms-flex-align: center !important;
+  }
+  #day5-img {
+    -ms-flex-align: center !important;
+  }
+  
+  #city-name-header{
+    text-align: center;
+  }
+
+  #five-day-header-text {
+    text-align: center;
+  }
+  
+  #search-button{
+    text-align: center;
+  }
+
+  .col-12 {
+    padding-left: 0 !important;
+  }
+
+  .col-4 {
+    padding-left: 0 !important;
+    margin-right: -15px;
+    text-align: center !important;
+  }
+  
+  .pad-right-some {
+    padding-right: 0 !important;
+  }
+
+  .border-standard-weather {
+    border-top: 3px var(--light-dark) solid;
+    border-radius: 10px;
+    margin-left: 0;
+
+  }
+  
+  .row {
+    margin-left: 0 !important;
+  }
+
+  #temp-container {
+    margin-left: 15px;
+  }
+
+  #humid-container {
+    margin-left: 15px;
+  }
+
+  #wind-container {
+    margin-left: 15px;
+  }
+
+  #description-container {
+    margin-left: 15px;
+  }
+
+  #UV-container-current {
+    margin-left: 15px;
+  }
+
+}
+
+#no-pad-container {
+  padding: 0;
+}
